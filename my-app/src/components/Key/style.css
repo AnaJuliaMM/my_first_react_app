@@ -1,0 +1,15 @@
+.key{
+    background-color: #252527;
+    color: #ffffff;
+    border: 0;
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+    margin: 4px;
+    font-size: 30px;
+    transition: .2s;
+}
+.key:hover{
+    transform: scale(105%);
+    cursor: pointer;
+}

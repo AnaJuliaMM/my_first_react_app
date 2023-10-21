@@ -5,19 +5,23 @@ export default function Counter(){
     const [number, setNumber] = useState(0);
 
     // Função que realiza o incremento do número
-    const handAddedNumber =  () => setNumber(number + 1)
+    const handAddedNumber =  () => {
+        setNumber(number + 1)
+        
+    }
 
     // Função que realiza o incremento do número
     const handSubtractedNumber =  () => setNumber(number - 1)
 
     // Função que realiza o incremento do número
     const handResetNumber =  () => setNumber(0)
- 
+
+
 
   return (
     <div>
         <p>Contador: {number}</p>
-        <div>
+        <div >
             <button onClick={handAddedNumber}> + </button>
             <button onClick={handSubtractedNumber}> - </button>
         </div>
