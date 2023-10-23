@@ -10,6 +10,6 @@
     transition: .2s;
 }
 .key:hover{
-    transform: scale(105%);
+    background-color:  #8d4f04;;
     cursor: pointer;
 }

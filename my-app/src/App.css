@@ -1,10 +1,28 @@
 .App {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  gap:10px;  
+  width: 100vw;
+  height: 100vh;
+  gap: 50px;
+}
+
+.history{
+  padding: 20px;
+  border: 2px solid #3a3a3a;
+  border-radius: 10px;
+  width: 200px;
+ 
+}
+
+.history-index{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.history-index button{
+  height: 30px;
 }
 
 .display{
@@ -12,13 +30,15 @@
   display: flex;
   justify-content: center;
   min-height: 40px ;
-  width: 100px;
+  width: 150px;
   height: 50px;
   border: 2px solid #3a3a3a;
   border-radius: 10px;
   padding: 2px;
-  overflow-x: auto;
-  overflow-y: hidden;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  background-color: rgb(209, 199, 187);
 }
 
 .Keyboard{
@@ -26,11 +46,3 @@
   grid-template-columns: 50px 50px 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
